@@ -1,0 +1,30 @@
+{
+  "name": "redux_encapsulation",
+  "version": "1.0.0",
+  "description": "Tool functions and high-order components for Redux",
+  "main": "/dist/index.js",
+  "module": "/dist/index.js",
+  "types": "/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erqiu-sj/reduxEncapsulation.git"
+  },
+  "keywords": [
+    "redux",
+    "react",
+    "typescript",
+    "javascript",
+    "react-redux",
+    "hoc"
+  ],
+  "author": "hooks_28",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erqiu-sj/reduxEncapsulation/issues"
+  },
+  "homepage": "https://github.com/erqiu-sj/reduxEncapsulation#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-redux": "^7.2.4"
+  }
+}
