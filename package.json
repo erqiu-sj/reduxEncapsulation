@@ -1,9 +1,9 @@
 {
   "name": "redux_encapsulation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tool functions and high-order components for Redux",
-  "main": "/dist/index.js",
-  "module": "/dist/index.js",
+  "main": "./lib/index.js",
+  "module": "./lib/index.js",
   "types": "/index.d.ts",
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
   "homepage": "https://github.com/erqiu-sj/reduxEncapsulation#readme",
   "dependencies": {
     "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-redux": "^7.2.4"
   }
 }
