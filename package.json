@@ -1,10 +1,11 @@
 {
-  "name": "redux_encapsulation",
-  "version": "1.0.1",
+  "name": "@zealforchange/redux-encapsulation",
+  "version": "1.0.6",
+  "private": false,
   "description": "Tool functions and high-order components for Redux",
   "main": "./lib/index.js",
   "module": "./lib/index.js",
-  "types": "/index.d.ts",
+  "types": "./src/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/erqiu-sj/reduxEncapsulation.git"
@@ -17,7 +18,9 @@
     "react-redux",
     "hoc"
   ],
-  "author": "hooks_28",
+  "author": {
+    "name": "hooks_28"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/erqiu-sj/reduxEncapsulation/issues"

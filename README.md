@@ -1,5 +1,9 @@
 # redux_encapsulation
 
+## developing..
+
+`yarn add @zealforchange/redux-encapsulation`
+
 ```typescript tsx
 import { Action } from "redux";
 import {
