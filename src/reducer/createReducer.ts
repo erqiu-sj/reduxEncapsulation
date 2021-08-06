@@ -1,8 +1,8 @@
 /*
  * @Author: 邱狮杰
  * @Date: 2021-07-30 21:48:59
- * @LastEditTime: 2021-07-30 22:47:57
- * @FilePath: /reduxEncapsulation/src/reducer/createReducer.ts
+ * @LastEditTime : 2021-08-06 16:21:30
+ * @FilePath     : /reduxEncapsulation/src/reducer/createReducer.ts
  * @Description:
  */
 import { Action } from "redux";
@@ -30,7 +30,7 @@ export class CreateReducer<S, A> {
     return (State: S = this.#state, action: Action & A): S => {
       const fn = Reflect.get(this.#reducerObj, action.type);
       if (typeof fn === "function") return fn.call(null, State, action);
-      return this.#state;
+      return State;
     };
   }
 }
