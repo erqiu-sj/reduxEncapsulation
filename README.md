@@ -47,3 +47,5 @@ export declare function createReducerProcessingHoc<I, S, Sr, Dr>(
   mapDispatchToProps?: MapDispatchToProps<Dr, any> | undefined
 ): ConnectedComponent<ComponentType<I>, unknown>;
 ```
+
+[docs](/docs.md)
