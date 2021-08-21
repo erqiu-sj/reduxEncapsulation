@@ -5,8 +5,9 @@
  * @FilePath: /reduxEncapsulation/src/index.ts
  * @Description: entry
  */
-import { defaultAction } from "./action/defaultAction";
-import { CreateReducer } from "./reducer/createReducer";
-import { createReducerProcessingHoc } from "./hoc/createReducerProcessingHoc";
+import { defaultAction } from './action/defaultAction'
+import { CreateReducer } from './reducer/createReducer'
+import { createReducerProcessingHoc } from './hoc/createReducerProcessingHoc'
+import { useActions, useConnect } from './hooks'
 
-export { CreateReducer, defaultAction, createReducerProcessingHoc };
+export { CreateReducer, defaultAction, createReducerProcessingHoc, useActions, useConnect }

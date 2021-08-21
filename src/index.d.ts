@@ -5,23 +5,16 @@
  * @FilePath     : /reduxEncapsulation/src/index.d.ts
  * @Description: create reducer
  */
-import { Action } from "redux";
-import {
-  ConnectedComponent,
-  MapDispatchToProps,
-  MapStateToProps,
-} from "react-redux";
-import { ComponentType } from "react";
+import { Action } from 'redux'
+import { ConnectedComponent, MapDispatchToProps, MapStateToProps } from 'react-redux'
+import { ComponentType, Dispatch } from 'react'
 
-export declare function defaultAction<T extends object>(action: Action["type"]): (params: T) => Action | (Action & T)
+export declare function defaultAction<T extends object>(action: Action['type']): (params: T) => Action | (Action & T)
 
 export declare class CreateReducer<S, A> {
-  constructor(state: S);
-  addAction(
-    action: Action["type"],
-    handler: (state: S, action: Action & A) => S
-  ): this;
-  finish(): (State: S | undefined, action: Action & A) => S;
+  constructor(state: S)
+  addAction(action: Action['type'], handler: (state: S, action: Action & A) => S): this
+  finish(): (State: S | undefined, action: Action & A) => S
 }
 
 export declare function createReducerProcessingHoc<I, S, Sr, Dr>(
@@ -29,4 +22,8 @@ export declare function createReducerProcessingHoc<I, S, Sr, Dr>(
   BaseComponent: ComponentType<I>,
   mapStateToProps?: MapStateToProps<Sr, any, S> | undefined,
   mapDispatchToProps?: MapDispatchToProps<Dr, any> | undefined
-): ConnectedComponent<ComponentType<I>, unknown>;
+): ConnectedComponent<ComponentType<I>, unknown>
+
+export declare function useActions<A extends object>(actions: A): A
+
+export declare function useConnect<S, R extends object, A extends object>(selector: (val: S) => R, actions?: A | undefined): (R | Dispatch<any>)[] | (R | A)[]
